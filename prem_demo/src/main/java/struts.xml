@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="saveEmployee" class="org.samplestructs.action.RegisterAction">
+			<result name="SAVE">/empregister.jsp</result>
+		</action>
+		<action name="employeeReport" class="org.samplestructs.action.ReportAction">
+			<result name="REPORT">/empreport.jsp</result>
+		</action>
+		<action name="updateEmployeeDetails" class="org.samplestructs.action.UpdateAction">
+			<result name="UPDATE">/empupdate.jsp</result>
+		</action>
+		
+	</package>
+</struts>  
